@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="6Terra" size="444.000000 371.243683" />
-    <ImageTarget name="6Ignis" size="444.000000 371.243683" />
+    <ImageTarget name="athanor" size="666.000000 566.362183" />
+    <ImageTarget name="vacuum" size="400.000000 353.177246" />
     <ImageTarget name="6Aquae" size="444.000000 371.243683" />
     <ImageTarget name="6Caeli" size="444.000000 371.243683" />
     <ImageTarget name="5Terra" size="444.000000 148.954834" />
