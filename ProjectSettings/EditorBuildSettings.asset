@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 869968634d940e544a7329b6d08dbf0f
+  - enabled: 1
+    path: Assets/Scenes/Motor9Scene.unity
+    guid: f78e648a1b5a3444cabd27bf0bf621e9
+  - enabled: 1
+    path: Assets/Scenes/coagula.unity
+    guid: b0294aa525e7c42dbaaaccf0e1d48dce
   m_configObjects: {}

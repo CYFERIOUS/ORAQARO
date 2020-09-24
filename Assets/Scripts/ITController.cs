@@ -15,12 +15,15 @@ public class ITController : MonoBehaviour,  ITrackableEventHandler
     Animator _evil;
     private int score = 0;
     private int evilScore = 0;
+
+ 
+
     void Start()
     {
         //texto = GameObject.Find("Canvaso").GetComponentInChildren<TMP_Text>();
        _evil = GameObject.Find("oracle").GetComponentInChildren<Animator>();
         
-        score = 46;
+        score = ScoreRange.CardScore;
         evilScore = score * 9;
         texto = this.gameObject.GetComponentInChildren<TMP_Text>();
 
@@ -30,6 +33,8 @@ public class ITController : MonoBehaviour,  ITrackableEventHandler
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         }
         started = false;
+
+        Debug.Log(ScoreRange.CardScore);
     }
 
 
