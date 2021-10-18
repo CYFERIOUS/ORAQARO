@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
+  <Tracking>
+    <ObjectTarget name="lastKlaka" />
+    <ObjectTarget name="klako" />
+    <ObjectTarget name="klaka2" />
+    <ObjectTarget name="klaka" />
+    <ObjectTarget name="novenoMonolith" />
+  </Tracking>
+</QCARConfig>

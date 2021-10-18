@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="10.1.4">
+<ModelTarget name="novenoMono" targetId="538a0ef1ebc741aeba54597833e9ed6a" version="14.0" toolVersion="10.1.4" bbox="-5.109894 -0.064516 -5.513891 0.336428 10.287539 0.062414" previewImage="538a0ef1ebc741aeba54597833e9ed6a_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="novenoMonos_assembly" assemblyId="fb6123d025864f60928f4197c73ee0fd">
+<Part name="novenoMono" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-3.61764 3.23208 20.163" rotation="AD: 0.9973489798123323 0.20951388131533208 -0.42002157830982867 228.582" image="novenoMono_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
