@@ -10,6 +10,8 @@ public class clickedEst : MonoBehaviour
 {
     // Start is called before the first frame update
     private string[] dataBoard = new string[2];
+    List<string[]> arrayList = new List<string[]>();
+    string magicWord = "DAEMONOS";
 
     public Canvas canvas;
     public Text myText;
@@ -34,12 +36,19 @@ public class clickedEst : MonoBehaviour
     private void TaskOnClick(int buttonIndex)
     {
       
-        Debug.Log("You have clicked the button #" + buttons[buttonIndex].name, buttons[buttonIndex]);
+        //Debug.Log("You have clicked the button #" + buttons[buttonIndex].name, buttons[buttonIndex]);
         
         GameObject ficha = buttons[buttonIndex].transform.GetChild(0).gameObject;
        
             myText.text = ficha.name;
-        ficha.SetActive(true);
+            string letter = ficha.name.Substring(0, ficha.name.Length/2);
+            string zona = ficha.name.Substring(1, ficha.name.Length / 2);
+            //Debug.Log("letra" + letter);
+            letterBoard(letter);
+            //Debug.Log("zona" + zona);
+            zoneBoard(zona);
+            ficha.SetActive(true);
+            populateList(dataBoard);
       
     }
 
@@ -47,13 +56,21 @@ public class clickedEst : MonoBehaviour
     public void zoneBoard(string zone)
     {
         dataBoard[0] = zone;
-        myText.text = "PIPOPEPO";
-        Debug.Log("zona : " + dataBoard[0].ToString());
+        Debug.Log("zona array: " + dataBoard[0].ToString());
     }
     public void letterBoard(string letter)
     {
-        Debug.Log(letter);
         dataBoard[1] = letter;
-        Debug.Log("letra : " + dataBoard[1].ToString());
+        Debug.Log("letra array: " + dataBoard[1].ToString());
+    }
+    public void populateList(string[] element)
+    {
+        arrayList.Add(element);
+        
+        foreach (object o in arrayList)
+        {
+            var list = (object[])o;
+            Debug.Log("en la lista" + list[0]);
+        }
     }
 }
