@@ -98,9 +98,15 @@ public class clickedEst : MonoBehaviour
             }*/
 
         }
+       
+      
+
         if (s.Length == magicWord.Length)
         {
-            if (String.Equals(magicWord,s))
+            var aSet = new HashSet<char>(s);
+            var bSet = new HashSet<char>(magicWord);
+            bool abSame = aSet.SetEquals(magicWord);
+            if (abSame)
             {
 
                 Debug.Log("MONSTRO");
