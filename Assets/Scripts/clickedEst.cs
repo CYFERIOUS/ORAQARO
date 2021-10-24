@@ -22,7 +22,9 @@ public class clickedEst : MonoBehaviour
 
     void Start()
     {
-        canvas = (Canvas)GameObject.FindObjectOfType(typeof(Canvas));
+        GameObject tempObject = GameObject.Find("Zona");
+        canvas = tempObject.GetComponent<Canvas>();
+        //canvas = (Canvas)GameObject.FindObjectOfType(typeof(Canvas));
         buttons = canvas.GetComponentsInChildren<Button>();
 
         for (int i = 0; i < buttons.Length; i++)
