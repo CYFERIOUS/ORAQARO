@@ -11,7 +11,7 @@ public class clickedEst : MonoBehaviour
     // Start is called before the first frame update
     private string[] dataBoard;
     List<string[]> arrayList = new List<string[]>();
-    string magicWord = "DAEMONOS";
+    string magicWord = "REYBAELOUS";
 
 
     public Canvas canvas;
