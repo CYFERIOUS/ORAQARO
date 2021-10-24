@@ -16,6 +16,8 @@ public class clickedEst : MonoBehaviour
 
     public Canvas canvas;
     public Text myText;
+    public Text nominous;
+    public Text position;
     Button[] buttons;
 
 
@@ -24,6 +26,10 @@ public class clickedEst : MonoBehaviour
     {
         GameObject tempObject = GameObject.Find("Zona");
         canvas = tempObject.GetComponent<Canvas>();
+
+        nominous.text = magicWord;
+        position.text = "";
+
         //canvas = (Canvas)GameObject.FindObjectOfType(typeof(Canvas));
         buttons = canvas.GetComponentsInChildren<Button>();
 
@@ -41,7 +47,7 @@ public class clickedEst : MonoBehaviour
       
             //Debug.Log("You have clicked the button #" + buttons[buttonIndex].name, buttons[buttonIndex]);
             GameObject ficha = buttons[buttonIndex].transform.GetChild(0).gameObject;
-            myText.text = ficha.name;
+            position.text = ficha.name;
             string letter = ficha.name.Substring(0, ficha.name.Length/2);
             string zona = ficha.name.Substring(1, ficha.name.Length/2);
             //Debug.Log("letra" + letter);
