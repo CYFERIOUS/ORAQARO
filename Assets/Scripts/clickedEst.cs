@@ -18,12 +18,15 @@ public class clickedEst : MonoBehaviour
     public Text myText;
     public Text nominous;
     public Text position;
+    private int archdaemon;
     Button[] buttons;
 
 
 
     void Start()
     {
+        archdaemon = Patron.archdemon;
+       
         GameObject tempObject = GameObject.Find("Zona");
         canvas = tempObject.GetComponent<Canvas>();
 
@@ -38,7 +41,7 @@ public class clickedEst : MonoBehaviour
             int closureIndex = i; // Prevents the closure problem
             buttons[closureIndex].onClick.AddListener(() => TaskOnClick(closureIndex));
         }
-
+        
 
     }
 
@@ -51,11 +54,13 @@ public class clickedEst : MonoBehaviour
             string letter = ficha.name.Substring(0, ficha.name.Length/2);
             string zona = ficha.name.Substring(1, ficha.name.Length/2);
             //Debug.Log("letra" + letter);
-            dataBoard = new string[2];
+            dataBoard = new string[3];
             letterBoard(letter);
             //Debug.Log("zona" + zona);
             zoneBoard(zona);
-            ficha.SetActive(true);
+            GameObject totem =  ficha.transform.GetChild(archdaemon).gameObject;
+            Debug.Log("totem" + totem.name);
+            totem.SetActive(true);
             populateList(dataBoard);
             revealDemon();
 
