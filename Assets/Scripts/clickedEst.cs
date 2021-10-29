@@ -20,6 +20,7 @@ public class clickedEst : MonoBehaviour
     public Text position;
     private int archdaemon;
     Button[] buttons;
+    
 
 
 
@@ -45,6 +46,20 @@ public class clickedEst : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        /*if (Input.touchCount>0 && Input.touches[0].phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit Hit;
+            if (Physics.Raycast(ray, out Hit))
+            {
+               nominous.text = Hit.transform.name;
+               Debug.Log(Hit.transform.name);
+            }
+        }*/
+    }
+
     private void TaskOnClick(int buttonIndex)
     {
       
@@ -61,6 +76,7 @@ public class clickedEst : MonoBehaviour
             GameObject totem =  ficha.transform.GetChild(archdaemon).gameObject;
             Debug.Log("totem" + totem.name);
             totem.SetActive(true);
+            
             populateList(dataBoard);
             revealDemon();
 
