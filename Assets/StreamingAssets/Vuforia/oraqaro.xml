@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="warp" size="1800.000000 1564.675293" />
+    <ImageTarget name="warp" size="900.000000 782.439453" />
     <ImageTarget name="yogaSix" size="400.000000 350.596649" />
     <ImageTarget name="yogaFive" size="400.000000 350.419159" />
     <ImageTarget name="yogaFour" size="400.000000 350.596649" />
